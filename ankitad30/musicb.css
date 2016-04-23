@@ -1,0 +1,350 @@
+
+body {
+	background-color: black;
+	font-family: "SanFrancisco", sans-serif;
+	margin:0 auto;
+	
+}
+
+#wrapper { 
+    margin: 0 auto; 
+ 
+ }
+	
+#topbar{
+	display: : block;
+	background-color: #383838;
+	width: 100%;
+	padding: 0.005em;
+	text-align: center;
+}
+
+#mobile-topbar {
+	display: none;
+	height: 60px;
+    background-color: #383838;
+}
+
+#mobile-topbar #collapse {
+	float: left;
+    background-size: 65px 40px;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#mobile-topbar #search {
+	background-image: url("images/searchimg.png");
+	background-size: 50px 50px;
+    background-repeat: no-repeat;
+    float: right;
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
+    margin-top: 4px;
+}
+
+#mobile-topbar #collapse.expand {
+	background-image: url("images/expand.png");
+	background-size: 65px 25px;
+}
+
+#mobile-topbar #collapse.collapse {
+	background-image: url("images/collapse.png");
+}
+
+.menu {
+	margin-left: 38%;
+	width: 30%;	
+}
+
+.menu ul {
+	margin: 0 auto;
+}
+
+.menu li {
+	list-style: none;
+	display : inline;
+	padding-right: 30px;
+	color: white;
+
+
+}
+
+.menu a {
+	display: inline;
+	text-decoration: none;
+	color: white;
+} 
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#searchicon {
+
+	background-image: url("images/searchimg.png");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.mainContent {
+	width: 57%;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+.mainContent li {
+	color: white;
+	list-style: none;
+	padding-bottom: 10px;
+
+}
+
+.mainContent a {
+
+     text-decoration: none;
+     color: #0099CC;
+
+}
+
+.sideBar {
+	margin-right: 6%;
+	width: 25%;
+	font-size: 13.6px;
+}
+
+.sideBar .sidetext {
+	margin-left: 20%;
+}
+
+.sideBar ul {
+	display: inline;
+
+}
+
+.sideBar li {
+
+	color: white;
+	list-style: none;
+
+
+}
+
+.sideBar a {
+
+	 text-decoration: none;
+     color: #0099CC;
+
+}
+
+.sideBar .sidetext.singer {
+	margin-top: 2%;
+}
+
+.sideBar img {
+	 border-radius: 50%;
+     overflow: hidden;
+     width: 13%;
+}
+
+.sideBar #header .content {
+	color: white;
+	padding-bottom:10px;
+	border-bottom: 2px solid #383838;
+	padding-right: 70%;
+}
+
+.sideBar #header {
+	padding-top: 6%;
+	margin-bottom: 3%;
+}
+
+.clear {
+	clear: both;
+
+}
+
+#footer ul {
+ text-align: center;
+
+}
+
+ul.bottom {
+	width: 60%;
+	margin-left: 12%;
+	padding-top: 5%;
+}
+
+.bottom li {
+
+	list-style: none;
+	display: inline;
+	padding-right: 10px;
+	color: white;
+	text-decoration: none;
+
+}
+
+.bottom a {
+	display: inline;
+    text-decoration: none;
+	color: #0099CC;
+}
+
+td ul {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+table tr:nth-child(2) td {
+	padding-top: 6%;
+}
+
+table tr ul li:nth-child(3) {
+	font-size: 13.6px;
+}
+
+
+
+/* For mobile view- ioS, Android */
+
+@media all and (max-width: 750px) {
+
+.mainContent table tr td {
+    	display: table-row;
+    	font-size: 50px;
+ }
+.mainContent table tr td ul {
+    	padding-left: 0%;
+}
+    table tr ul li:nth-child(3) {
+    	font-size: 30px;
+}
+.mainContent table tr td img {
+    	width: 100%;
+}
+.sideBar {
+    	display: inline-block;
+    	float: left;
+    	font-size: 30px;
+    	width: 88%;
+    	margin-left: 6%;
+}
+.mainContent {
+    	width: 88%;
+    }
+.sideBar #header {
+    	font-size: 50px;
+    }
+.bottom li {
+    	display: block;
+    	padding-bottom: 5px;
+    	font-size: 25px;
+    }
+#topbar {
+    	display:none;
+    }
+#topbar #searchicon {
+    	display:none;
+    }
+#topbar ul li {
+    	display: block;
+    }
+#topbar ul {
+    	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    	border-color: #ccc;
+    	border-width: 1px;
+    	width:20%;
+    	border-style: solid;
+    	background-color:white ;
+    	position: absolute;
+    	left: 10px;
+    	top: 49px;
+    }
+
+#topbar .menu a {
+    	color: #383838;
+    }
+
+#topbar .menu {
+    	margin: 0;
+    	padding: 0;
+    }
+#topbar ul li:hover {
+    	background-color: #D0D0D0;
+    }
+#mobile-topbar {
+    	display:block;
+    }
+}
+
+/* For Standard desktops view 1280 x 1000  */
+
+@media all and (min-width: 1300px) {
+   
+.mainContent {
+    width: 57%;
+    margin-left: 11%;
+    margin-right: 6%;
+    padding-top: 1.5%;
+}
+
+.mainContent table tr td img {
+    	width: 70%;
+    }
+
+.mainContent table tr td {
+    
+    	font-size: 25px;
+ }
+
+ table tr ul li:nth-child(3) {
+    	font-size:  18px;
+}
+
+.sideBar {
+
+    margin-right: 7%;
+    width: 19%;
+    font-size: 18.6px;
+    padding-top: 1.5%;
+
+}
+
+.sideBar #header {
+    padding-top: 9%;
+    margin-bottom: 3%;
+    font-size: 23px;
+}
+
+
+ul.bottom {
+
+	width: 70%;
+    margin-left: 17%;
+    padding-top: 8%;
+}
+
+.bottom li {
+    
+    	font-size: 20px;
+    }
+
+
+}
+
+
+
